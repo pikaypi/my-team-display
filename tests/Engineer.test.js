@@ -24,7 +24,7 @@ describe('Engineer', () => {
             const testEngineer = new Engineer('John Doe', 1234, 'email@email.com', 'username');
 
             // Assert
-            expect(testEngineer.getGithub).toEqual('username');
+            expect(testEngineer.getGithub()).toEqual('username');
         });
 
         it('Should have a getRole method that returns "Engineer"', () => {
@@ -32,7 +32,7 @@ describe('Engineer', () => {
             const testEngineer = new Engineer('John Doe', 1234, 'email@email.com', 'username');
 
             // Assert
-            expect(testEngineer.getRole).toEqual('Engineer');
+            expect(testEngineer.getRole()).toEqual('Engineer');
         });
     });
 });

@@ -4,4 +4,4 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
 // Import Inquirer
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');

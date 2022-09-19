@@ -14,10 +14,10 @@ const generateCard = (employee) => {
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Office: ${employee.officeNumber}</p>
                     </div>`
         case employee.getRole() === 'Engineer':
-            return `<div class="bg-blue-500 col-span-1 grid rounded-t-lg gap-y-1 pb-2 drop-shadow-lg">
+            return `<div class="bg-green-500 col-span-1 grid rounded-t-lg gap-y-1 pb-2 drop-shadow-lg">
                         <div>
-                            <h2 class="bg-blue-900 rounded-t-lg p-2 text-blue-100 text-2xl">${employee.name}</h2>
-                            <h3 class="bg-blue-900 p-2 text-blue-100 text-xl">Engineer</h3>
+                            <h2 class="bg-green-900 rounded-t-lg p-2 text-green-100 text-2xl">${employee.name}</h2>
+                            <h3 class="bg-green-900 p-2 text-green-100 text-xl">Engineer</h3>
                         </div>
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Id: ${employee.id}</p>
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>

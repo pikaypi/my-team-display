@@ -1,9 +1,12 @@
 const fs = require('fs');
+const Engineer = require('../lib/Engineer');
+const Intern = require('../lib/Intern');
+const Manager = require('../lib/Manager');
 
 
 const generateCard = (employee) => {
-    switch(employee) {
-        case employee.getRole() === 'Manager':
+    switch(employee.getRole()) {
+        case 'Manager':
             return `<div class="bg-blue-500 col-span-1 grid rounded-t-lg gap-y-1 pb-2 drop-shadow-lg">
                         <div>
                             <h2 class="bg-blue-900 rounded-t-lg p-2 text-blue-100 text-2xl">${employee.name}</h2>
@@ -13,7 +16,7 @@ const generateCard = (employee) => {
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Office: ${employee.officeNumber}</p>
                     </div>`
-        case employee.getRole() === 'Engineer':
+        case 'Engineer':
             return `<div class="bg-green-500 col-span-1 grid rounded-t-lg gap-y-1 pb-2 drop-shadow-lg">
                         <div>
                             <h2 class="bg-green-900 rounded-t-lg p-2 text-green-100 text-2xl">${employee.name}</h2>
@@ -23,7 +26,7 @@ const generateCard = (employee) => {
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
                         <p class="bg-slate-300 mr-1 ml-1 w-2/3 justify-self-center p-2">GitHub: <a href="https://www.github.com/${employee.github}" target="_blank">${employee.github}</a></p>
                     </div>`
-        case employee.getRole() === 'Intern':
+        case 'Intern':
             return `<div class="bg-yellow-500 col-span-1 grid rounded-t-lg gap-y-1 pb-2 drop-shadow-lg">
                         <div>
                             <h2 class="bg-yellow-900 rounded-t-lg p-2 text-yellow-100 text-2xl">${employee.name}</h2>
@@ -43,7 +46,7 @@ const generateHTML = (employees) => {
     for (let i = 0; i < employees.length; i++) {
         cardArr.push(generateCard(employees[i]))
     };
-    let cardStr = cardArr.join('');
+    const cardStr = cardArr.join('');
     return `<!DOCTYPE html>
             <html lang="en">
                 <head>
@@ -65,4 +68,4 @@ const generateHTML = (employees) => {
             </html>`
 }
 
-module.exports = generateHTML();
+module.exports = {generateHTML}

@@ -18,6 +18,8 @@ This application creates an html file to display the members of a software devel
 
 ---
 ## Usage
+[Watch a walkthrough video](https://drive.google.com/file/d/1OjkfbxOkbCv9vrt40RZsvRuu6vZZiWbX/view)
+
 1. Start the application by navigating in the terminal to the root directory of the repository and execute `npm run start`
 2. Follow the prompts in the terminal to fill in the html template
 3. Once you have selected "Create my roster", you can find your index.html file in the root directory

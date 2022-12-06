@@ -13,7 +13,7 @@ This application creates an html file to display the members of a software devel
 
 ---
 ## Installation
-1. Clone the repository and navigate in the terminal to the root directory
+1. Clone the [repository](https://github.com/pikaypi/my-team-display) and navigate in the terminal to the root directory
 2. Execute `npm install` to import the required node modules
 
 ---

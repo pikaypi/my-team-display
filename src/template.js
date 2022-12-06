@@ -62,7 +62,7 @@ const generateHTML = (employees) => {
                         <h1 class="bg-slate-800 h-32 text-center text-5xl text-slate-100 pt-7">My Team Roster</h1>
                     </header>
                 
-                    <main class="grid grid-cols-5 gap-8 p-1">
+                    <main class="grid grid-cols-4 gap-8 p-1">
                         ${cardStr}
                     </main>
                 </body>
